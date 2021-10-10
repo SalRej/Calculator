@@ -93,10 +93,10 @@ function isDividingByZero()
 }
 function numberPressed(x)
 {
-    //if the last char of the equation is number (number + number)
+    //if the last char of the equation is number (number + number) or a . (number + 0.)
     //this means that (=) has been pressed
     //and i need to clear the entry and equation in order to take another number
-    if(/[0-9]/.test(lastChar(equation)))
+    if(/[0-9 || .]/.test(lastChar(equation)))
     {
         clearAll();
     }
