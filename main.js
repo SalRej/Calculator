@@ -199,7 +199,10 @@ function manageInput(x)
         //chek if entry already contains a dot
         if(!entry.includes("."))
         {
-            entry+="0.";
+            if(entry.length>0)
+                entry+=".";
+            else
+                entry+="0.";
             document.getElementById('input').value=entry;
         }
     }
