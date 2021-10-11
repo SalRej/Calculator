@@ -3,7 +3,7 @@ let entry="";
 //value where i write the ready answer and next operator
 let equation="";
 //limit of how many character i can enter
-const limit=14;
+const limit=11;
 
 document.getElementById("input").value=entry;
 document.getElementById("equation").innerHTML=equation;
